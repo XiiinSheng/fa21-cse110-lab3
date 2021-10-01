@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Minutes</title>
+  <link href='./src/conversation.svg' rel="icon">
+</head>
+<body>
+  <!-- TODO: b strong i em a br -->
+  <header>
+    <h1>CSE110 First Group Meeting</h1>
+    <h2>onboarding</h2>
+    <nav>
+      <p>
+        <a href="#general">General</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#notes">Notes</a>
+        <a href="#plan">Plan</a>
+      </p>
+    </nav>
+    <hr>
+  </header>
+  
+  <main>
+    
+    
+    <section id="general">
+      <h1>Meeting Details</h1>
+      <ul>
+        <li><b>Date of Meeting:</b> 10/01/2021</li>
+        <li><b>Time:</b> 10:45 am</li>
+        <li><b>Location:</b> Geisel 2 <em>West</em></li>
+        <li><b>Members Present:</b> <span id="leader">John Doe</span>, Mary Jane, Jack Peterson</li>
+      </ul>
+    </section>
+    
+    <hr>
+    
+    <section id="agenda">
+      <h1>Agenda Details</h1>
+      <p>
+      <b>Old Business:</b> <br> (None)
+    </p>
+    <p>
+      <b>New Business:</b> <br> Get to know everyone, <strong>get familiar with the project</strong>, brainstorm for project design
+    </p>
+  </section>
+  
+  <hr>
+  <section id="notes">
+    <h1>Meeting Notes</h1>
+    
+    <p><strong>John:</strong> Lorem ipsum dolor sit <i>amet</i> consectetur adipisicing elit. Aperiam explicabo cum magni rerum, culpa aliquam rem dolorem itaque molestias quas laudantium aspernatur dicta! Nihil recusandae nisi aspernatur vitae natus quibusdam.</p>
+    <details>
+      <summary>Project Brainstorm</summary>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Aperiam, perferendis dignissimos eius eum ipsa culpa sapiente? <br>Corporis impedit harum magni, perspiciatis, incidunt sit ea, possimus quas error tempore maiores dolorum? 
+    </details>
+    
+    <div id="media">
+      <br>
+      <video controls>
+        <source src="./src/meetingVideo.mp4" type="video/mp4">
+      </video>
+      <br>
+      <audio controls>
+        <source src="./src/meetingAudio.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    
+  </section>
+  
+  <hr>
+  
+  <section id="plan">
+    <h1>Action Plan</h1>
+    <ol>
+      <li>Everyone: Fill in form below before 10/10/2021</li>
+      <li>Mary: Do research on the framework</li>
+      <li>John: Meet with Bryan for info</li>
+    </ol>
+    <form action="">
+      <fieldset>
+        <h3>Group Member Survey Form</h3>
+
+        <label>Name: </label>
+        <input type="text"><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female<br>
+
+        <label>Birth Date: </label>
+        <input type="date"><br>
+        <label>Your favorite web language: </label>
+        <input list="languages" />
+        <datalist id="languages">
+          <option value="HTML">
+          <option value="CSS">
+            <option value="JavaScript">
+          <option value="Other">
+          </datalist>
+        <br>
+        <label>Your favorite animal: </label>
+        <select id="animals">
+          <option value="">--Choose an animal--</option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+          <option value="Fish">Fish</option>
+          <option value="Other">Other</option>
+        </select>
+        <br>
+        <label>Message for other members: </label><br>
+        <textarea name="message" id="" cols="30" rows="10"></textarea><br>
+        <input type="checkbox" name="confirmation"><label for="confirmation">I love this group! </label><br>
+        <button>Submit</button>
+      </fieldset>
+    </form>
+  </section>
+  
+</main>
+
+
+<footer>
+  <img src="./src/image.png">
+  <p>Reference: <br>
+    Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
+  Video and audio from YouTube: <a href="https://www.youtube.com/watch?v=3WrZMzqpFTc">Weekly Meeting Example</a>.
+  </p>
+</footer>
+
+</body>
+</html>
