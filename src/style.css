@@ -1,0 +1,137 @@
+/** CSS styling for CSE110 group meeting website 
+ * Reference: 
+ *Color theme: https://graphicmama.com/blog/website-color-schemes/
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+ /* global */ 
+* {
+  --primary-text-color: #D6D6D6;
+  --secondary-text-color: white;
+  --background-color: rgb(44,43,48);   /* #2C2B30 */
+  --background-lighter-color: hsl(240,1,31);  /* #4E4E50 */
+  --primary-decoration-color: #F58F7C; 
+  --secondary-decoration-color: #F2C4C1;
+
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+a{
+  transition: 0.3s;
+}
+
+/* header */
+
+header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-color: var(--primary-decoration-color);
+  border-style: dotted;
+  border-width: 5px;
+  border-radius: 3%;
+  margin: 2rem;
+}
+
+header > h2 { 
+  color: var(--secondary-text-color);
+  font-size: 0.5cm;  /* ~20px */
+  margin: auto;
+}
+
+header > nav > p {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  color: var(--secondary-decoration-color);
+}
+
+hr {
+  border: 0.4mm solid var(--secondary-decoration-color);
+}
+
+/* main */
+main {
+  margin: 5%;
+  margin-top: 50px;
+}
+
+section #media{
+  display: grid;
+  height: min(60vw, 500px);
+  grid-template-columns: [c1] 10% [c2] 80% [c3] 10% [c4];
+  grid-template-rows: [r1] 10% [r2] 70% [r3] 20% [r4];
+  justify-items: center;
+}
+
+#video {
+  height: 40vw;
+  max-height: 300px;
+  grid-column: c2 / c3;
+  grid-row: r2 / r3;
+  align-self: center;
+}
+
+video ~ audio {
+  grid-column: c2 / c3;
+  grid-row: r3 / r4;
+
+}
+
+button.form-submission-button {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--primary-decoration-color);
+  color: var(--background-color);
+  cursor: pointer; 
+}
+
+/* footer */
+footer {
+  position: relative;
+}
+
+img[src="./src/image.png"] {
+  width: 10vw;
+  min-width: 60px;
+  float: left;
+}
+
+img, img + p {
+  padding: 5vh;
+  display: block;
+}
+
+/* Responsiveness */
+a:hover{
+  color: var(--primary-decoration-color);
+}
+
+a:active {
+  color: white;
+}
+
+p ~ details > summary:hover {
+  cursor: help;
+}
+
+img:hover {
+  display: none;
+}
+
+@media (max-width: 720px){
+  hr {
+    max-width: 50vw;
+  }
+}

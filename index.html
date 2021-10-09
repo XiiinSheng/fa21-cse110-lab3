@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meeting Minutes</title>
   <link href='./src/conversation.svg' rel="icon">
+  <link href="./src/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,13 +15,12 @@
     <h2>onboarding</h2>
     <nav>
       <p>
-        <a href="#general">General</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#notes">Notes</a>
-        <a href="#plan">Plan</a>
+        <a class="nav-item" href="#general">General</a>
+        <a class="nav-item" href="#agenda">Agenda</a>
+        <a class="nav-item" href="#notes">Notes</a>
+        <a class="nav-item" href="#plan">Plan</a>
       </p>
     </nav>
-    <hr>
   </header>
   
   <main>
@@ -60,11 +60,11 @@
     
     <div id="media">
       <br>
-      <video controls>
+      <video id="video" controls>
         <source src="./src/meetingVideo.mp4" type="video/mp4">
       </video>
       <br>
-      <audio controls>
+      <audio id="audio" controls>
         <source src="./src/meetingAudio.mp3" type="audio/mp3">
       </audio>
     </div>
@@ -114,7 +114,7 @@
         <label>Message for other members: </label><br>
         <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
         <input type="checkbox" name="confirmation" id="confirmation"><label for="confirmation">I love this group! </label><br>
-        <button>Submit</button>
+        <button class="form-submission-button">Submit</button>
       </fieldset>
     </form>
   </section>
